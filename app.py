@@ -12,7 +12,7 @@ def get_jdbc_connection():
     connection = jaydebeapi.connect(
         'com.teradata.jdbc.TeraDriver',
         'jdbc:teradata://edw-dev.company.org',
-        {'secretNAME': 'LOGIN', 'secret_pass': 'fhkfdsfnsf', 'tmode': 'TERA', 'charset': 'UTF8'},
+        {'secretNAME': 'admin', 'password': 'admin', 'tmode': 'TERA', 'charset': 'UTF8'},
         '/path/')
     return connection
 
